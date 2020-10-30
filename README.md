@@ -90,3 +90,26 @@ Background research and additional reading was conducted at the beginning of the
 The implementation of the design was different from what was documented because the design evolved over the course of development.
 
 The final implementation is a functional programming environment. Users can interact via 2 inputs: mouse and keyboard or Microsoft Kinect gesture. The programming environment includes a virtual keyboard that supports identical inputs (additional interacting includes voice commands). Keyboard interface is controlled by the program and opened only when needed.
+
+## References
+2008. About – Alice. Alice.org [online]. Available from: http://www.alice.org/about/ [Accessed 4 January 2018].
+
+Processing.org. Processing.org [online]. Available from: https://processing.org/ [Accessed 4 January 2018].
+
+CRAWFORD, S. How Microsoft Kinect Works. HowStuffWorks [online]. Available from: https://electronics.howstuffworks.com/microsoft-kinect2.htm [Accessed 4 January 2018].
+
+DANN, W., COSGROVE, D., SLATER, D. and CULYBA, D., 2011. Mediated Transfer: Alice 3 to Java. Available from: http://www.alice.org/wp-content/uploads/2017/04/MediatedTransfer.pdf [Accessed 4 January 2018].
+
+JANA, A., 2011. Development With Kinect .NET SDK (Part I) – Installation and Development Environment Setup. Abhijit's Blog [online]. Available from: https://abhijitjana.net/2011/09/14/development-with-kinect-net-sdk-part-i-installation-and-development-environment-setup/ [Accessed 4 January 2018].
+
+JANA, A., 2012. Kinect for Windows SDK Programming Guide (Community Experience Distilled). Packt Publishing.
+
+KARCH, M., 2017. Get Your Kids Started Coding with these Programming Languages. Lifewire[online]. Available from: https://www.lifewire.com/kids-programming-languages-4125938 [Accessed 4 January 2018].
+
+LEMUT, E., DU BOULAY, B. and DETTORI, G. Cognitive models and intelligent environments for learning programming.
+
+MALONEY, J., RESNICK, M., RUSK, N., SILVERMAN, B. and EASTMOND, E., 2010. The Scratch Programming Language and Environment. ACM Transactions on Computing Education [online]. 10 (4), pp. 1-15. [Accessed 5 January 2018].
+
+MICROSOFT. Kinect for Windows Sensor Components and Specifications [image]. Available from: https://msdn.microsoft.com/en-us/library/jj131033.aspx [Accessed 4 January 2018].
+
+WILLIAMS, A., 2018. The 10 Best Xbox 360 Kinect Games to Buy in 2018. Lifewire [online]. Available from: https://www.lifewire.com/best-x360-kinect-games-3563057 [Accessed 4 January 2018].
