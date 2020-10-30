@@ -1,4 +1,4 @@
-# Microsoft Kinect Programming Interface by Gaskell and Sewards
+# Microsoft Kinect Programming Interface
 This project depends on the discontinued Microsoft Kinect, Microsoft.Speech.dll and Processing 3. Visit https://youtu.be/GG0vmP9NcRQ to watch an early demonstration of the then-to-be-complete project recorded in January 2018. The following text is taken from the project report.
 
 ## Introduction
