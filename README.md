@@ -92,7 +92,7 @@ The implementation of the design was different from what was documented because 
 The final implementation is a functional programming environment. Users can interact via 2 inputs: mouse and keyboard or Microsoft Kinect gesture. The programming environment includes a virtual keyboard that supports identical inputs (additional interacting includes voice commands). Keyboard interface is controlled by the program and opened only when needed.
 
 ## References
-2008. About – Alice. Alice.org [online]. Available from: http://www.alice.org/about/ [Accessed 4 January 2018].
+About Alice. Alice.org [online]. Available from: http://www.alice.org/about/ [Accessed 4 January 2018].
 
 Processing.org. Processing.org [online]. Available from: https://processing.org/ [Accessed 4 January 2018].
 
