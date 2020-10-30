@@ -1,0 +1,86 @@
+﻿<Window x:Class="Programming.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Programming" mc:Ignorable="d" Title="Kinect Programming Environment" Height="518" Width="656" Background="#000" Loaded="KinectLoad" Closing="KinectClose" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+
+        <Canvas x:Name="canDraw" Height="480" Width="640" Margin="0,0,0,0">
+            <Image x:Name="imgVideo" HorizontalAlignment="Left" Height="480" Margin="0,0,0,0" VerticalAlignment="Top" Width="640"/>
+
+            <Grid x:Name="coder" Height="480" Width="640">
+                <Button x:Name="loops" Content="Loops" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,0,534,427"/>
+                <Button x:Name="variables" Content="Variables" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,53,534,373"/>
+                <Button x:Name="methods" Content="Methods" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,107,534,320"/>
+                <Button x:Name="shapes" Content="Shapes" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,160,534,267"/>
+                <TextBlock x:Name="arrow" Text="\/" Foreground="White" FontSize="18" Margin="44,228,0,214" TextWrapping="NoWrap" HorizontalAlignment="Left" Width="32"/>
+                <Button x:Name="run" Content="Run" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="427,427,0,0"/>
+                <Button x:Name="line1" Content="Empty" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="427,1,0,426"/>
+                <Button x:Name="line2" Content="Empty" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="427,54,0,372"/>
+                <Button x:Name="line3" Content="Empty" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="427,108,0,319"/>
+                <Button x:Name="line4" Content="Empty" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="427,161,0,266"/>
+                <Button x:Name="line5" Content="Empty" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="427,214,0,213"/>
+                <Button x:Name="line6" Content="Empty" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="427,267,0,160"/>
+                <Button x:Name="line7" Content="Empty" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="427,321,0,106"/>
+                <Button x:Name="line8" Content="Empty" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="427,374,0,53"/>
+            </Grid>
+
+            <Grid x:Name="loopButtons" Height="480" Width="640">
+                <Button x:Name="if" Content="If" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,266,534,161"/>
+                <Button x:Name="var1b" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="106,266,481,161"/>
+                <Button x:Name="ifb" Content="&lt;" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="159,266,428,161"/>
+                <Button x:Name="var2b" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="212,266,375,161"/>
+                <Button x:Name="for" Content="For" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,319,534,108"/>
+                <Button x:Name="var3b" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="106,319,481,108"/>
+                <Button x:Name="while" Content="While" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,373,534,54"/>
+                <Button x:Name="var4b" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="106,372,481,55"/>
+                <Button x:Name="whileb" Content="&lt;" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="159,372,428,55"/>
+                <Button x:Name="var5b" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="212,372,375,55"/>
+            </Grid>
+
+            <Grid x:Name="variableButtons" Height="480" Width="640" Visibility="Collapsed">
+                <Button x:Name="var1" Content="var1" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,266,534,161"/>
+                <Button x:Name="var1a" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="106,266,481,161"/>
+                <Button x:Name="var2" Content="var2" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,319,534,108"/>
+                <Button x:Name="var2a" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="106,319,481,108"/>
+                <Button x:Name="var3" Content="var3" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,373,534,54"/>
+                <Button x:Name="var3a" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="106,373,481,54"/>
+                <Button x:Name="var4" Content="var4" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,426,534,1"/>
+                <Button x:Name="var4a" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="106,426,481,1"/>
+            </Grid>
+
+            <Grid x:Name="methodButtons" Height="480" Width="640" Visibility="Collapsed">
+                <Button x:Name="print" Content="Print" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,266,534,161"/>
+                <Button x:Name="var1c" Content="Hello" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="106,266,428,161"/>
+            </Grid>
+
+            <Grid x:Name="shapeButtons" Height="480" Width="640" Visibility="Collapsed">
+                <Button x:Name="eclipse" Content="Eclipse" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,266,534,161"/>
+                <Button x:Name="rectangle" Content="Rectangle" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0,319,534,108"/>
+                <Button x:Name="var1d" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="106,266,481,161"/>
+                <Button x:Name="var2d" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="159,266,428,161"/>
+                <Button x:Name="var3d" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="212,266,375,161"/>
+                <Button x:Name="var4d" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="265,266,322,161"/>
+                <Button x:Name="var5d" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="106,319,481,108"/>
+                <Button x:Name="var6d" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="159,319,428,108"/>
+                <Button x:Name="var7d" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="212,319,375,108"/>
+                <Button x:Name="var8d" Content="0" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="265,319,322,108"/>
+            </Grid>
+
+            <Grid x:Name="lowerGrid" Height="480" Width="640" Visibility="Collapsed"></Grid>
+
+            <Grid x:Name="upperGrid" Height="480" Width="640" Visibility="Collapsed"></Grid>
+
+            <Grid x:Name="elements" Height="480" Width="640" Visibility="Collapsed">
+                <Rectangle x:Name="inputField" Fill="#ddd" Height="40" VerticalAlignment="Top" Margin="0, 0, 0, 0"/>
+                <TextBlock x:Name="inputText" Text="" FontSize="18" HorizontalAlignment="Left" Margin="10, 11, 60, 0" TextWrapping="NoWrap"/>
+                <Button x:Name="close" Content="Close" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="0, 40, 0, 0" Height="50" Width="53.3" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="delete" Content="backspace" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="373,40,160,0" Height="50" VerticalAlignment="Top"/>
+                <Button x:Name="clear" Content="clear" FontSize="20" Click="ClickButton" ClickMode="Press" Margin="533,40,0,0" Height="50" VerticalAlignment="Top"/>
+                <Button x:Name="caps" Content="caps" FontSize="20" Click="ClickButton" ClickMode="Press" Margin="0,270,480,0" Height="50" Width="107" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <Button x:Name="underscore" Content="underscore" FontSize="18" Click="ClickButton" ClickMode="Press" Margin="213,270,320,0" Height="50" VerticalAlignment="Top"/>
+                <Button x:Name="space" Content="space" FontSize="20" Click="ClickButton" ClickMode="Press" Margin="373,270,54,160" Height="50"/>
+            </Grid>
+        </Canvas>
+    </Grid>
+</Window>
+
